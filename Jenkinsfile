@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools{
+    tools {
         maven "MAVEN3"
         jdk "OracleJDK8"
     }
@@ -16,9 +16,9 @@ pipeline {
       NEXUS_LOGIN = 'nexuslogin'
 
     }
-    stages{
+    stages {
         stage('build')
-            steps{
+            steps {
                 sh 'mvn -s settings.xml -DskipTests install'
             }
     }
