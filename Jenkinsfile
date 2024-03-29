@@ -78,7 +78,7 @@ pipeline {
                     artifacts: [
                         [artifactiId:'vproapp',
                         clasifier: '',
-                        file: 'target/bprofile-v2.war',
+                        file: 'target/vprofile-v2.war',
                         type: 'war']
                     ]
                 )
