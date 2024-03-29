@@ -76,7 +76,7 @@ pipeline {
                     repository: "${RELEASE_REPO}",
                     credentialsId: "${NEXUS_LOGIN}",
                     artifacts: [
-                        [artifactiId:'vproapp',
+                       [artifactiId: 'vproapp',
                         clasifier: '',
                         file: 'target/vprofile-v2.war',
                         type: 'war']
